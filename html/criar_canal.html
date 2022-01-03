@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OnWork</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../icones/css/all.min.css">
+</head>
+<body>
+<div id="janela-criar-canal">
+	<header id="header">
+		<div class="float-esq">OnWork</div>
+		<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+		<div class="float-dir"><i class="fas fa-times"></i></div>
+		<div class="float-dir"><i class="far fa-window-maximize"></i></div>
+		<div class="float-dir"><i class="far fa-window-minimize"></i></div>
+	</header>
+	
+	<div class="flex">
+		<section id="criar-canal-esquerda">
+			<div class="voltar"><a href="canal.html"><i class="fas fa-arrow-alt-circle-left fa-2x" style="color: #3d405b"></i></a></div>
+			<div class="titulo-funcao titulo-criar-canal">Criar canal</div>
+			<div class="campo">
+				<div class="label">Nome do canal</div>
+				<div class="input">
+					<input type="text" style="height:21px; width: 210px; outline: none" id="nome-canal">
+				</div>
+				<p id="erro-input">Campo obrigatório!</p>
+			</div>
+			<div class="campo control-group">
+				<label class="control control-radio">
+					Público
+					<input type="radio" name="radio" value="Público" checked="checked" />
+					<div class="control_indicator"></div>
+				</label>
+				<label class="control control-radio">
+					Privado
+					<input type="radio" name="radio"  value="Privado" />
+					<div class="control_indicator"></div>
+				</label>
+			</div>
+			<div class="campo" style="padding-top: 5px;">
+				<div class="label">
+					Descrição (opcional)
+				</div>
+				<div class="input">
+					<textarea rows="9" cols="27" style="resize: none;"></textarea>
+				</div>
+			</div>
+		</section>
+		<section id="criar-canal-direita">
+			<div class="container-users">
+				<div>
+					<div class="label" style="text-align: center;">
+						Adicionar usuários (opcional)
+					</div>
+					<form class="bloco-icones">
+						<input type="text">
+						<a href=""><i class="fas fa-search" style="color:black"></i></a>	
+					</form>
+				</div>
+				<form id="busca-users">
+				 	<div class="item-busca-users">
+					    <input type="checkbox" id="test1" />
+					    <label for="test1">Usuário 1<i class="fas fa-plus-circle add-icon"></i></label> 		
+				 	</div>
+					<div class="item-busca-users">
+					  <input type="checkbox" id="test2" />
+					  <label for="test2">Usuário 2<i class="fas fa-plus-circle add-icon"></i></label>
+					</div>
+					<div class="item-busca-users">
+					  <input type="checkbox" id="test3" />
+					  <label for="test3">Usuário 3<i class="fas fa-plus-circle add-icon"></i></label>
+					</div>
+					<div class="item-busca-users">
+					  <input type="checkbox" id="test4" />
+					  <label for="test4">Usuário 4<i class="fas fa-plus-circle add-icon"></i></label>
+					</div>
+					<div class="item-busca-users">
+					  <input type="checkbox" id="test5" />
+					  <label for="test5">Usuário 5<i class="fas fa-plus-circle add-icon"></i></label>
+					</div>
+					<div class="item-busca-users">
+					  <input type="checkbox" id="test6" />
+					  <label for="test6">Usuário 6<i class="fas fa-plus-circle add-icon"></i></label>
+					</div>
+					<div class="item-busca-users">
+					  <input type="checkbox" id="test7" />
+					  <label for="test7">Usuário 7<i class="fas fa-plus-circle add-icon"></i></label>
+					</div>
+					<div class="item-busca-users">
+					  <input type="checkbox" id="test8" />
+					  <label for="test8">Usuário 8<i class="fas fa-plus-circle add-icon"></i></label>
+					</div>
+				 
+				</form>
+			</div>
+			<button type="submit" class="criar">
+				Criar
+			</button>
+		</section>
+	</div>
+</div>
+<section id="tela-confirmar-add" class="borda">
+	<div id="header">
+			<div class="float-esq">OnWork</div>
+		<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+		<a href="criar_canal.html" class="float-dir"><i class="fas fa-times"></i></a>
+		<div class="float-dir"><i class="far fa-window-minimize"></i></div>	
+	</div>
+	<div class="container">
+		<div style="text-align: center;">Tem certeza que deseja criar o canal?</div>
+		<div id="infos-submit">
+			<p style="text-align: center;">Nome do canal: <span id="nomeDoCanal" style="font-weight: bold"></span></p>
+			<p style="text-align: center; font-weight: bold;" id="privacidade"></p>
+		</div>
+		<div class="botoes">
+			<div class="BUTTON_PQN verde" id="criar-canal"><i class="fas fa-check" style="position: relative;top: 4px; right: 8px;"></i>Criar</div>
+			<div id="voltar" class="BUTTON_PQN vermelho"><i class="fas fa-times" style="position: relative;top: 4px; right: 8px;"></i>Voltar</div>			
+		</div>
+	</div>
+</section>
+
+
+<section id="tela-add-confirmado">
+	<div id="header">
+			<div class="float-esq">OnWork</div>
+		<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+		<div class="float-dir"><i class="fas fa-times"></i></div>
+		<div class="float-dir"><i class="far fa-window-minimize"></i></div>	
+	</div>
+	<div class="container">
+		Canal criado com sucesso!
+		
+		<a href="canal.html" class="voltar-btn"><i class="fas fa-arrow-circle-left" style="position: relative;top: 1px; right: 8px;"></i>Voltar</a>
+		
+	</div>
+</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
+

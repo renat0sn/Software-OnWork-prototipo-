@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OnWork</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../icones/css/all.min.css">
+</head>
+<body>
+	<section id='janela-calendario'>
+
+		<header id="header">
+			<div class="float-esq">OnWork</div>
+			<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+			<div class="float-dir"><i class="fas fa-times"></i></div>
+			<div class="float-dir"><i class="far fa-window-maximize"></i></div>
+			<div class="float-dir"><i class="far fa-window-minimize"></i></div>
+		</header>
+		<section id="conteudo-prazos" class="desabilitar-selecao">
+			<section id="barra-esquerda" style="overflow-y: scroll;">
+				<div class="voltar">
+					<a href="../index.html"><i class="fas fa-arrow-alt-circle-left fa-2x" style="color: #3d405b"></i></a>
+				</div>
+				<div style="height: 475px;">
+					<div id='dia-de-hoje'>
+						Dia
+						<div id="data">22/11/2020</div>
+					</div>
+					<div id="lista-tarefas">
+						<div id='1' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 1
+						</div>
+						<div id='2' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 2
+						</div>
+						<div id='3' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 3
+						</div>
+						<div id='4' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 4
+						</div>	
+						<div id='5' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 5
+						</div>
+						<div id='6' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 6
+						</div>
+						<div id='7' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 7
+						</div>
+						<div id='8' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 8
+						</div>
+						<div id='9' class="item-barra-lateral item-transition desabilitar-selecao">
+							Atividade 9
+						</div>
+					</div>
+				</div>
+				
+				<a href="nova_tarefa.html" id="criar-tarefa" class="desabilitar-selecao">
+					<i class="fas fa-plus-circle" style="margin-right: 10px;"></i>
+					Nova tarefa
+				</a>
+			</section>
+			<section id="barra-direita">
+				<div id="calendario-container" class="desabilitar-selecao">
+					<div id="calendario-conteudo">
+						<div id="mes">
+							Novembro
+						</div>
+						<div id="colunas">
+							<div class="coluna">
+								Dom
+							</div>
+							<div class="coluna">
+								Seg
+							</div>
+							<div class="coluna">
+								Ter
+							</div>
+							<div class="coluna">
+								Qua
+							</div>
+							<div class="coluna">
+								Qui
+							</div>
+							<div class="coluna">
+								Sex
+							</div>
+							<div class="coluna">
+								Sáb
+							</div>
+						</div>
+						<div id="dias">
+							<div class="dia">
+								1
+							</div>
+							<div class="dia">
+								2
+							</div>
+							<div class="dia">
+								3
+							</div>
+							<div class="dia">
+								4
+							</div>
+							<div class="dia">
+								5
+							</div>
+							<div class="dia">
+								6
+							</div>
+							<div class="dia">
+								7
+							</div>
+							<div class="dia">
+								8
+							</div>
+							<div class="dia">
+								9
+							</div>
+							<div class="dia">
+								10
+							</div>
+							<div class="dia">
+								11
+							</div>
+							<div class="dia">
+								12
+							</div>
+							<div class="dia">
+								13
+							</div>
+							<div class="dia">
+								14
+							</div>
+							<div class="dia">
+								15
+							</div>
+							<div class="dia">
+								16
+							</div>
+							<div class="dia">
+								17
+							</div>
+							<div class="dia">
+								18
+							</div>
+							<div class="dia">
+								19
+							</div>
+							<div class="dia">
+								20
+							</div>
+							<div class="dia">
+								21
+							</div>
+							<div class="dia">
+								22
+							</div>
+							<div class="dia">
+								23
+							</div>
+							<div class="dia">
+								24
+							</div>
+							<div class="dia">
+								25
+							</div>
+							<div class="dia">
+								26
+							</div>
+							<div class="dia">
+								27
+							</div>
+							<div class="dia">
+								28
+							</div>
+							<div class="dia" style="border-bottom-left-radius: 10px;">
+								29
+							</div>
+							<div class="dia">
+								30
+							</div>
+							<div class="dia" style="color: gray;">
+								1
+							</div>
+							<div class="dia" style="color: gray;">
+								2
+							</div>
+							<div class="dia" style="color: gray;">
+								3
+							</div>
+							<div class="dia" style="color: gray;">
+								4
+							</div>
+							<div class="dia" style="color: gray; border-bottom-right-radius: 10px;">
+								5
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="descricao-atividades">
+					<div id="titulo-tarefa"></div>
+					<div id='info-tarefas'>
+						<div id="descricao">
+							Descrição: 
+							<div id='traco-descricao' style="padding: 0 20px; font-size: 13px;">-------------------------------------</div>
+						</div>
+						<div id="tipo">
+							Tipo: 
+							<div id='traco-tipo' style="padding: 0 20px; font-size: 13px;">------------------</div>
+						</div>
+						<div id="prazo">
+							Prazo: 
+							<div style="padding: 0 10px; font-size: 13px;">--/--/---- hh:mm</div>
+						</div>
+					</div>
+					<div id="concluir-tarefa" class="desabilitar-selecao">
+						Concluir atividade
+					</div>
+				</div>
+				
+			</section>
+		</section>
+	</section>
+
+	<section id="confirmar-concluir-tarefa">
+		<div id="header">
+			<div class="float-esq">OnWork</div>
+			<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+			<div class="float-dir"><i class="fas fa-times"></i></div>
+			<div class="float-dir"><i class="far fa-window-minimize"></i></div>	
+		</div>
+		<div class="container  desabilitar-selecao">
+			<div>Concluir tarefa?</div>
+			<div id="tarefa-concluir" style="font-weight: bold"></div>
+			<div id="btn-concluir-tarefa">Sim</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OnWork</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../icones/css/all.min.css">
+</head>
+<body id="janela-canal">
+	<div id="janela-conf">
+	<header id="header">
+		<div class="float-esq">OnWork</div>
+		<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+		<div class="float-dir"><i class="fas fa-times"></i></div>
+		<div class="float-dir"><i class="far fa-window-maximize"></i></div>
+		<div class="float-dir"><i class="far fa-window-minimize"></i></div>
+	</header>
+	
+	<section id="conteudo-canal">
+		<section id="chat-conf" style="background: #f4f1de">
+			<div class="item-barra-lateral" style="background: white; cursor: auto; position: fixed; height: 50px;">
+				Bate papo
+			</div>
+			<div id="msg-conf" class="flex-column">
+				<div class="borda-curva borda-esq-curta espacamento-msg"></div>
+				<div class="borda-curva borda-dir-curta espacamento-msg"></div>
+				<div class="borda-curva borda-dir-longa espacamento-msg"></div>
+				<div class="borda-curva borda-esq espacamento-msg"></div>
+				<div class="borda-curva borda-esq-curta espacamento-msg"></div>
+				<div class="borda-curva borda-esq-longa espacamento-msg"></div>
+				<div class="borda-curva borda-dir espacamento-msg"></div>
+				<div class="borda-curva borda-dir-curta espacamento-msg"></div>
+				<div class="borda-curva borda-esq-curta espacamento-msg"></div>
+				<div class="borda-curva borda-esq-curta espacamento-msg"></div>
+				<div class="borda-curva borda-esq espacamento-msg"></div>
+				<div class="borda-curva borda-esq espacamento-msg"></div>
+				<div class="borda-curva borda-dir-curta espacamento-msg"></div>
+			</div>
+			<div id="msg">
+				<div class="emoji-anexo">
+					<i class="far fa-smile fa-lg"></i>
+				</div>
+				<div class="input">
+					<input type="text" placeholder="Sua mensagem..." style="height: 31px; outline: none">
+				</div>
+				<div class="enter" style="height: 37px;">
+					<img src="../icones/enter-arrow.svg" style="color:white;" width=15 />
+				</div>
+			</div>
+		</section>
+
+		<section id="participantes">
+			<div id="operacoes">
+				<div id="mic" class="btn-operacao btn-verde"><i class="fas fa-microphone"></i></div>
+				<div id="video" class="btn-operacao btn-verde"><i class="fas fa-video"></i></div>
+				<div id="a" class="btn-operacao btn-azul"><i class="fas fa-desktop"></i></div>
+			</div>
+			<div class="show-usuarios">
+				<div class="container-participantes">
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 1
+						</div>
+					</div>
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 2
+						</div>
+					</div>
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 3
+						</div>
+					</div>
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 4
+						</div>
+					</div>
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 5
+						</div>
+					</div>
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 6
+						</div>
+					</div>
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 7
+						</div>
+					</div>
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 8
+						</div>
+					</div>
+					<div class="perfil">
+						<div class="usuario-img">
+							<img src="../icones/do-utilizador.svg">
+						</div>
+						<div class="nome-user">
+							Usuário 9
+						</div>
+					</div>
+				</div>
+				<button class="criar" style="height: 30px; width: 60px; position: relative; left: 290px; bottom: 50px; font-size: 14px;">
+					Sair
+				</button>
+
+			</div>
+			<div class="container-lista bg-bege">
+				<div style="margin-left: 10px;">Participantes:</div>
+				<div style="margin-left: 10px;" id="lista-users">
+					<div class="user">Usuário 1</div>
+					<div class="user">Usuário 2</div>
+					<div class="user">Usuário 3</div>
+					<div class="user">Usuário 4</div>
+					<div class="user">Usuário 5</div>
+					<div class="user">Usuário 6</div>
+					<div class="user">Usuário 7</div>
+					<div class="user">Usuário 8</div>
+					<div class="user">Usuário 9</div>
+					<div class="user">Usuário 10</div>
+					<div class="user">Usuário 11</div>
+					<div class="user">Usuário 12</div>
+				</div>
+			</div>
+		</section>
+	</section>
+</div>
+<section id="tela-confirma-encerrar" class="borda">
+	<div id="header">
+			<div class="float-esq">OnWork</div>
+		<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+		<a href="conf.html" class="float-dir"><i class="fas fa-times"></i></a>
+		<div class="float-dir"><i class="far fa-window-minimize"></i></div>	
+	</div>
+	<div class="container">
+		<div style="text-align: center; margin:15px 0;">Sair da reunião?</div>
+		<div class="botoes">
+			<a href="../index.html" class="BUTTON_PQN vermelho desabilitar-selecao" id="criar-canal" style="font-size: 14px; display: flex; align-items: center; justify-content: center;">Sair</a>
+			<a href="../index.html" class="BUTTON_PQN vermelho desabilitar-selecao" style="font-size: 14px;">Encerrar reunião</a>
+			<div id="voltar" class="BUTTON_PQN preto desabilitar-selecao" style="font-size: 14px; margin-top: 20px;">Voltar</div>	
+		</div>
+	</div>
+</section>
+<section id="tela-confirmar-share" class="borda">
+	<div id="header">
+			<div class="float-esq">OnWork</div>
+		<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+		<a href="conf.html" class="float-dir"><i class="fas fa-times"></i></a>
+		<div class="float-dir"><i class="far fa-window-minimize"></i></div>	
+	</div>
+	<div class="container">
+		<div style="text-align: center; margin:15px 0;">Compartilhar tela?</div>
+		<div style="display: flex; flex-direction: column; align-items:center ;justify-content: space-around;">
+			<a href="conf_share.html" class="BUTTON_PQN btn-azul t desabilitar-selecao" id="criar-canal" style="font-size: 14px; display: flex; align-items: center; justify-content: center; margin-top:40px;">Compartilhar</a>
+			<a href='conf.html' id="voltar" class="BUTTON_PQN preto desabilitar-selecao" style="font-size: 14px; margin-top: 10px;">Voltar</a>	
+		</div>
+	</div>
+</section>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
+

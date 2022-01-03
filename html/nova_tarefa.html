@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OnWork</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../icones/css/all.min.css">
+</head>
+<body>
+	<section id="janela-criar-tarefa">
+		<header id="header">
+			<div class="float-esq">OnWork</div>
+			<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+			<div class="float-dir"><i class="fas fa-times"></i></div>
+			<div class="float-dir"><i class="far fa-window-maximize"></i></div>
+			<div class="float-dir"><i class="far fa-window-minimize"></i></div>
+		</header>
+		<div class="flex" style="background: #f4f1de;">
+			<div id="add-esquerda">
+				<div class="voltar">
+					<a href="calendario.html"><i class="fas fa-arrow-alt-circle-left fa-2x" style="color: #3d405b"></i></a>
+					<div style="float: right; position: relative; top: 6px;">23 de novembro de 2020</div>
+				</div>
+				<div class="container">
+					<div style="font-size: 34px; text-align: center; margin-bottom: 30px;">Registrar tarefa</div>
+
+					<div style="margin-bottom: 40px;">
+						<div class="label">Nome da tarefa</div>
+						<div class="input">
+							<input type="text" style="height:21px; width: 210px; outline: none" id="nome-canal">
+						</div>
+						<p id="erro-input">Campo obrigatório!</p>
+					</div>
+
+					<div style="margin-bottom: 30px;">
+						<div class="label">Descrição (opcional)</div>
+						<div class="input">
+							<textarea rows="5" cols="27" style="resize: none;"></textarea>
+						</div>
+						<p id="erro-input">Campo obrigatório!</p>
+					</div>
+
+					<div style="margin-bottom: 40px;">
+						<span class="label">Concluir até à(s)</span>
+						
+						<span style="margin-top: 10px;">
+							<select style="width: 65px;">
+						        <option>0:00</option><option>1:00</option><option>2:00</option><option>3:00</option><option>4:00</option>
+						        <option>5:00</option><option>6:00</option><option>7:00</option><option>8:00</option>
+						        <option>9:00</option><option>10:00</option><option>11:00</option><option>12:00</option>
+						        <option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option>
+						        <option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option>
+						        <option>21:00</option><option>22:00</option><option>23:00</option>
+  		  					</select>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="add-direita">
+				<div class="container-users" style="height: 230px;">
+					<div>
+						<div class="label" style="text-align: center;">
+							Tipo de atividade (opcional)
+						</div>
+						<form class="bloco-icones">
+							<input type="text">
+							<a href=""><i class="fas fa-search" style="color:black"></i></a>	
+						</form>
+					</div>
+					<form id="busca-users">
+					 	<div class="item-busca-users" style="height: 26px;">
+						    <input type="checkbox" id="test1" />
+						    <label for="test1">Tipo 1</label> 		
+					 	</div>
+						<div class="item-busca-users" style="height: 26px;">
+						  <input type="checkbox" id="test2" />
+						  <label for="test2">Tipo 2</label>
+						</div>
+						<div class="item-busca-users" style="height: 26px;">
+						  <input type="checkbox" id="test3" />
+						  <label for="test3">Tipo 3</label>
+						</div>
+						<div class="item-busca-users" style="height: 26px;">
+						  <input type="checkbox" id="test4" />
+						  <label for="test4">Tipo 4</label>
+						</div>
+						<div class="item-busca-users" style="height: 26px;">
+						  <input type="checkbox" id="test5" />
+						  <label for="test5">Tipo 5</label>
+						</div>
+						<div class="item-busca-users" style="height: 26px;">
+						  <input type="checkbox" id="test6" />
+						  <label for="test6">Tipo 6</label>
+						</div>
+						<div class="item-busca-users" style="height: 26px;">
+						  <input type="checkbox" id="test7" />
+						  <label for="test7">Tipo 7</label>
+						</div>
+						<div class="item-busca-users" style="height: 26px;">
+						  <input type="checkbox" id="test8" />
+						  <label for="test8">Tipo 8</label>
+						</div>
+					 
+					</form>
+				</div>
+				<div>
+					<div id="selecao-notificar" class="bg-branco"></div>
+					Me notificar !
+				</div>
+				<div id="enabledDisabled">
+					<div style="margin: 10px 0;">
+					<select id='d'style="width: 47px;" disabled>
+						        <option>Dia</option><option>1</option><option>2</option><option>3</option><option>4</option>
+						        <option>5</option><option>6</option><option>7</option><option>8</option>
+						        <option>9</option><option>10</option><option>11</option><option>12</option>
+						        <option>13</option><option>14</option><option>15</option><option>16</option>
+						        <option>17</option><option>18</option><option>19</option><option>20</option>
+						        <option>21</option><option>22</option><option>23</option><option>24</option>
+						        <option>25</option><option>26</option><option>27</option><option>28</option>
+						        <option>29</option><option>30</option>
+  		  					</select> / 
+  		  				<select id='m' style="width: 52px;" disabled>
+						        <option>Mês</option><option>1</option><option>2</option><option>3</option><option>4</option>
+						        <option>5</option><option>6</option><option>7</option><option>8</option>
+						        <option>9</option><option>10</option><option>11</option><option>12</option>
+  		  					</select> / 2020
+				</div>
+				<select id='h' style="width: 85px; display: block; position: relative; left: 45px;"  disabled>
+						        <option>Horário</option><option>0:00</option><option>1:00</option><option>2:00</option><option>3:00</option><option>4:00</option>
+						        <option>5:00</option><option>6:00</option><option>7:00</option><option>8:00</option>
+						        <option>9:00</option><option>10:00</option><option>11:00</option><option>12:00</option>
+						        <option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option>
+						        <option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option>
+						        <option>21:00</option><option>22:00</option><option>23:00</option>
+  		  			</select>
+  		  			<p id="erro-notificar">Campos obrigatórios!</p>
+				</div>
+				
+  		  		<div id='btn-criar-tarefa' style="margin-top: 30px; height: 40px; width: 120px; display: flex; align-items: center;justify-content: center; border: 1px solid black; border-radius: 10px;" class="criar">
+  		  			Criar
+  		  		</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="tela-add-confirmado-tarefa">
+	<div id="header">
+			<div class="float-esq">OnWork</div>
+		<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+		<a href="calendario.html" class="float-dir"><i class="fas fa-times"></i></a>
+		<div class="float-dir"><i class="far fa-window-minimize"></i></div>	
+	</div>
+	<div class="container">
+		Tarefa criada!
+		<a href="calendario.html" class="voltar-btn"><i class="fas fa-arrow-circle-left" style="position: relative;top: 1px; right: 8px;"></i>Voltar</a>
+		
+	</div>
+</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

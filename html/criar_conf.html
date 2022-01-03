@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OnWork</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../icones/css/all.min.css">
+</head>
+<body>
+<div id="janela-criar-conf">
+	<header id="header">
+		<div class="float-esq">OnWork</div>
+		<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+		<div class="float-dir"><i class="fas fa-times"></i></div>
+		<div class="float-dir"><i class="far fa-window-maximize"></i></div>
+		<div class="float-dir"><i class="far fa-window-minimize"></i></div>
+	</header>
+	
+	<div class="bg-bege">
+		<a href="../index.html">
+			<i class="fas fa-arrow-alt-circle-left fa-2x voltar" style="color: #3d405b; border-right: 1px solid black;"></i>
+		</a>
+		<div class="titulo-criar-conf">Criar vídeoconferência</div>
+	</div>
+	
+	<div class="container">
+		<div class="flex-column">
+			<div class="label" style="text-align: center;">
+				Adicione usuários
+			</div>
+			<form class="bloco-icones">
+				<input type="text">
+				<a href=""><i class="fas fa-search" style="color:black"></i></a>	
+			</form>
+		</div>
+		<form id="busca-users">
+		 	<div class="item-busca-users">
+			    <input type="checkbox" id="test1" />
+			    <label for="test1"style="position:relative; right: 2px;">Usuário 1<i class="ajustar fas fa-plus-circle add-icon" ></i></label> 		
+		 	</div>
+			<div class="item-busca-users">
+				<input type="checkbox" id="test2" />
+				<label for="test2"style="position:relative; right: 2px;">Usuário 2<i class="ajustar fas fa-plus-circle add-icon"></i></label>
+			</div>
+			<div class="item-busca-users">
+				<input type="checkbox" id="test3" />
+				<label for="test3"style="position:relative; right: 2px;">Usuário 3<i class="ajustar fas fa-plus-circle add-icon"></i></label>
+			</div>
+			<div class="item-busca-users">
+				<input type="checkbox" id="test4" />
+				<label for="test4"style="position:relative; right: 2px;">Usuário 4<i class="ajustar fas fa-plus-circle add-icon"></i></label>
+			</div>
+			<div class="item-busca-users">
+				<input type="checkbox" id="test5" />
+				<label for="test5"style="position:relative; right: 2px;">Usuário 5<i class="ajustar fas fa-plus-circle add-icon"></i></label>
+			</div>
+			<div class="item-busca-users">
+				<input type="checkbox" id="test6" />
+				<label for="test6"style="position:relative; right: 2px;">Usuário 6<i class="ajustar fas fa-plus-circle add-icon"></i></label>
+			</div>
+			<div class="item-busca-users">
+				<input type="checkbox" id="test7" />
+				<label for="test7"style="position:relative; right: 2px;">Usuário 7<i class="ajustar fas fa-plus-circle add-icon"></i></label>
+			</div>
+			<div class="item-busca-users">
+				<input type="checkbox" id="test8" />
+				<label for="test8"style="position:relative; right: 2px;">Usuário 8<i class="ajustar fas fa-plus-circle add-icon"></i></label>
+			</div> 
+		</form>
+		<div class="campo control-group">
+			<label class="control control-radio">
+				Público
+				<input type="radio" name="radio" value="Público" checked="checked" />
+				<div class="control_indicator"></div>
+			</label>
+			<label class="control control-radio">
+				Privado
+				<input type="radio" name="radio"  value="Privado" />
+				<div class="control_indicator"></div>
+			</label>
+		</div>
+		<button id='avancar' type="submit" class="criar desabilitar-selecao">
+			Avançar
+		</button>
+	</div>
+</div>
+	<section id="tela-configurar">
+		<div id="header">
+			<div class="float-esq">
+				OnWork
+			</div>
+			<i class="fas fa-assistive-listening-systems" style="margin-left: 10px;"></i>
+			<a href="criar_conf.html" class="float-dir"><i class="fas fa-times"></i></a>
+			<div class="float-dir"><i class="far fa-window-minimize"></i></div>	
+		</div>
+		<div class="titulo-configurar bg-bege">
+			<div style="text-align: center;">Configurar áudio</div>
+		</div>
+		<div style="margin: 20px 15px; display: flex;">
+			<div style="width: 50%; text-align: center; border-right: 2px solid black;">
+				<div>Fone</div>
+				<div id="btn-fone" class="btn-habilitar btn-vermelho-transition desabilitar-selecao">Desabilitado</div>
+				<div id="config-fone" class="select opacity-zero" style="margin: 10px 20px;">
+    				<select>
+				        <option>Alto-falante</option>
+				        <option>Fone de ouvido</option>
+  		  			</select>
+	    			<div class="select_arrow">
+	    			</div>
+				</div>
+			</div>
+			<div style="width: 50%; text-align: center;">
+				Microfone
+				<div id="btn-mic" class="btn-habilitar btn-vermelho-transition desabilitar-selecao">Desabilitado</div>
+				<div id="config-mic" class="select opacity-zero" style="margin: 10px 20px;">
+    				<select>
+				        <option>Mic 1</option>
+				        <option>Mic 2</option>
+				        <option>Entrada de Linha</option>
+  		  			</select>
+	    			<div class="select_arrow">
+	    			</div>
+				</div>
+			</div>
+		</div>
+			<a href="conf.html" style="border:1px solid black; position: relative;bottom: 6px;left: 134px; width: 130px; height: 50px;" class="criar desabilitar-selecao">
+				Iniciar
+			</a>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
+
